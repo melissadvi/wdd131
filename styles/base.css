@@ -46,11 +46,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main Layout - CSS Grid */
 main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide em duas colunas */
+    gap: 20px;
 }
 
 main h1 {
