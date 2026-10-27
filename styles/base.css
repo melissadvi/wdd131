@@ -50,9 +50,6 @@ main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide em duas colunas */
-    gap: 20px;
 }
 
 main h1 {
@@ -76,6 +73,11 @@ main h1 {
     border-bottom: 2px solid #003366;
     padding-bottom: 0.3rem;
 }
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
 
 .card img {
     max-width: 100%;
@@ -84,7 +86,6 @@ main h1 {
     margin-bottom: 1rem;
 }
 
-/* Footer */
 footer {
     background-color: #003366;
     color: #fff;
