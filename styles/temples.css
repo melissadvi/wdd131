@@ -3,6 +3,7 @@
     --primary-dark: #14263f;
     --accent: #f2c14e;
     --bg: #f6f4ef;
+    --white: #ffffff;
     --text: #222222;
     --heading-font: "Roboto", serif;
     --body-font: "Roboto", sans-serif;
@@ -28,7 +29,7 @@ header {
     flex-wrap: wrap;
     padding: 0.75rem 1rem;
     background-color: var(--primary);
-    color: #ffffff;
+    color: var(--white);
 }
 
 header h2 {
@@ -40,7 +41,7 @@ header h2 {
 #menu {
     background: none;
     border: none;
-    color: #ffffff;
+    color: var(--white);
     font-size: 2rem;
     line-height: 1;
     cursor: pointer;
@@ -60,7 +61,7 @@ nav.open {
 
 nav a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white);
     padding: 0.75rem 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
@@ -91,7 +92,7 @@ h1 {
 
 figure {
     margin: 0;
-    background-color: #ffffff;
+    background-color: var(--white);
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -114,7 +115,7 @@ footer {
     padding: 1rem;
     text-align: center;
     background-color: var(--primary);
-    color: #ffffff;
+    color: var(--white);
 }
 
 footer p {
