@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil | Place Project</title>
+    <meta name="description" content="facts and current weather of Brazil.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    <main>
+        <!-- Photo by Christopher Borges on Pexels -->
+        <picture>
+            <source srcset="images/toucan-large.webp" media="(min-width: 700px)">
+            <img src="images/toucan-small.webp" alt="A toucan with its large orange and yellow beak, perched on a branch against a blue sky." width="600" height="400">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+                <p><span>Capital:</span> Brasília</p>
+                <p><span>Area:</span> 8,515,767 km²</p>
+                <p><span>Population:</span> 203 million</p>
+                <p><span>Language:</span> Portuguese</p>
+                <p><span>Currency:</span> Real (BRL)</p>
+                <p><span>Time Zone:</span> UTC-3</p>
+        </section>
+        <section class="weather">
+            <h2>Weather: Sunny in Brasília</h2>
+                <img src="images/weather.svg" alt="Sunny day" width="48" height="48">
+                <p><span>Temperature:</span> <span id="temp">23</span> °C</p>
+                <p><span>Conditions:</span> Sunny</p>
+                <p><span>Wind:</span> <span id="wind">20</span> km/h</p>
+                <p><span>Wind Chill:</span> <span id="windchill"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🪼 Melissa A. Vieira 🪼 Brazil </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

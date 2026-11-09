@@ -1,0 +1,88 @@
+:root {
+    --blue: #002776;
+    --green: #006b2c;
+    --yellow: #fedd00;
+    --bg: #f5f7f2;
+    --box-bg: rgba(255, 255, 255, 0.92);
+    --font: "Segoe UI", Arial, sans-serif;
+    --text: #1a1a1a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    color: var(--text);
+    background: var(--bg);
+}
+
+header {
+    background-color: var(--green);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.data,
+.weather{
+    border: 2px solid var(--blue);
+    background: var(--bg);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    color: var(--blue);
+}
+
+.data p > span:first-child,
+.weather p > span:first-child {
+    font-weight: bold;
+}
+
+.weather img {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background: var(--green);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+@media (min-width: 700px) {
+    main { position: relative; }
+    .data, .weather {
+    position: absolute;
+    margin: 0;
+    background: var(--box-bg);
+    text-align: left;
+}
+
+.data { top: 1rem; left: 1rem;}
+.weather { bottom: 1rem; right: 1rem;}
+
+.weather img { display: none}
+.weather h2::after { content: " ☀️"; }
+}
+
+
+
+
