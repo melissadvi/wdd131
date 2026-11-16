@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Demo</title>
+    <meta name="description" content="Demonstration of native lazy loading of images">
+    <meta name="author" content="Melissa A. Vieira">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Demonstration</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="https://placekittens.com/400/600" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placekittens.com/400/700" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placekittens.com/400/800" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placekittens.com/400/650" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placekittens.com/400/750" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placekittens.com/400/850" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🪼 Melissa A. Vieira 🪼 Brazil</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
