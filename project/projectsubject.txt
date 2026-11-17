@@ -1,0 +1,16 @@
+WDD131 Dynamic Web Fundamentals
+Project Week 04: Website Subject
+Author: Melissa Adão Vieira
+
+01. Subject: An informational website about Spider-Man's movies, comparing the 
+different versions of the character across film universes.
+
+02. Content: A home page introducing the character, a movies page with an 
+interactive table that can be filtered by universe or actor and sorted by release 
+year, a villains page and a contact page with a form for fan polls. Users will be 
+able to mark movies as watched, saved in their browser. A references page will credit
+all sources.
+
+03. Reason: Spider-Man is my favorite superhero, and many people are 
+be confuse by different movie versions. I want to build a clear, organized guide that helps
+them explore each version.
