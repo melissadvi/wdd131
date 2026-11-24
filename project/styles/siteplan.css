@@ -1,0 +1,192 @@
+:root {
+    --navy: #14213d;
+    --mist: #f5f7fb;
+    --crimson: #b3202a;
+    --ink: #1c1c28;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--mist);
+    color: var(--ink);
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, .font-heading {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.font-body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--navy);
+    color: var(--mist);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: var(--navy);
+    border-top: 1px solid var(--mist);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    list-style: none;
+}
+
+nav a {
+    color: var(--mist);
+    font-weight: 600;
+}
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: var(--navy);
+    border-bottom: 3px solid var(--crimson);
+    padding-bottom: 0.25rem;
+}
+
+a {
+    color: var(--crimson);
+}
+
+code {
+    background-color: #dfe5f0;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}
+
+.swatches {
+    list-style: none;
+    padding: 0;
+}
+
+.swatches li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.swatch {
+    flex-shrink: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid var(--ink);
+    border-radius: 6px;
+}
+
+dt {
+    margin-top: 1rem;
+    color: var(--navy);
+    font-size: 1.1rem;
+}
+
+dd {
+    margin-left: 0;
+}
+
+.wireframes {
+    display: grid;
+    gap: 2rem;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wire {
+    display: grid;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: 2px dashed var(--ink);
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.wire > div,
+.w-row > div {
+    padding: 0.75rem 0.25rem;
+    border: 1px solid var(--ink);
+    background-color: #dfe5f0;
+}
+
+.w-header,
+.w-footer {
+    background-color: var(--navy) !important;
+    color: var(--mist);
+}
+
+.w-hero {
+    padding: 2rem 0.25rem !important;
+}
+
+.wire-mobile {
+    max-width: 16rem;
+    margin: 0 auto;
+}
+
+.w-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.w-row > div {
+    padding: 1.5rem 0.25rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--navy);
+    color: var(--mist);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (min-width: 48rem) {
+    .wireframes {
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+    }
+}
