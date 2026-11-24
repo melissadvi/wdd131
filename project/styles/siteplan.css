@@ -141,36 +141,30 @@ figcaption {
     text-align: center;
 }
 
-.wire > div,
-.w-row > div {
-    padding: 0.75rem 0.25rem;
-    border: 1px solid var(--ink);
-    background-color: #dfe5f0;
-}
-
-.w-header,
-.w-footer {
-    background-color: var(--navy) !important;
+.wire > div.w-header,
+.wire > div.w-footer {
+    background-color: var(--navy);
     color: var(--mist);
 }
 
-.w-hero {
-    padding: 2rem 0.25rem !important;
+.wire > div.w-hero {
+    padding: 2rem 0.25rem;
 }
 
-.wire-mobile {
-    max-width: 16rem;
-    margin: 0 auto;
+.swatch-navy {
+    background-color: var(--navy);
 }
 
-.w-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+.swatch-mist {
+    background-color: var(--mist);
 }
 
-.w-row > div {
-    padding: 1.5rem 0.25rem;
+.swatch-crimson {
+    background-color: var(--crimson);
+}
+
+.swatch-ink {
+    background-color: var(--ink);
 }
 
 footer {
