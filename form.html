@@ -19,17 +19,17 @@
             <legend>Product Name</legend>
             <label for="product">Product</label>
                 <select id="product" name="product" required>
-                    <option value="" disabled selected>Choose a Product &#9662;</option>
+                    <option value="" disabled selected>Select a Product ...</option>
                 </select>
         </fieldset>
         <fieldset>
             <legend>Overall Rating</legend>
             <div class="rating">
                 <label for="rating1"><input type="radio" id="rating1" name="rating" value="1" required> ★ <span class="sr-only"> 1 Star </span></label>
-                <label for="rating2"><input type="radio" id="rating2" name="rating" value="2" required> ★★ <span class="sr-only"> 2 Star </span></label>
-                <label for="rating3"><input type="radio" id="rating3" name="rating" value="3" required> ★★★ <span class="sr-only"> 3 Star </span></label>
-                <label for="rating4"><input type="radio" id="rating4" name="rating" value="4" required> ★★★★ <span class="sr-only"> 4 Star </span></label>
-                <label for="rating5"><input type="radio" id="rating5" name="rating" value="5" required> ★★★★★ <span class="sr-only"> 5 Star </span></label>
+                <label for="rating2"><input type="radio" id="rating2" name="rating" value="2" required> ★★ <span class="sr-only"> 2 Stars </span></label>
+                <label for="rating3"><input type="radio" id="rating3" name="rating" value="3" required> ★★★ <span class="sr-only"> 3 Stars </span></label>
+                <label for="rating4"><input type="radio" id="rating4" name="rating" value="4" required> ★★★★ <span class="sr-only"> 4 Stars </span></label>
+                <label for="rating5"><input type="radio" id="rating5" name="rating" value="5" required> ★★★★★ <span class="sr-only"> 5 Stars </span></label>
             </div>
         </fieldset>
         <fieldset>
@@ -41,18 +41,18 @@
             <legend>Which features did you find useful in the product? (Check all that apply)</legend>
             <label for="durability"><input type="checkbox" id="durability" name="features" value="durability"> Durability</label>
             <label for="ease"><input type="checkbox" id="ease" name="features" value="ease-of-use"> Ease of Use</label>
-            <label for="performance"><input type="checkbox" id="performance" name="features" value="performance"> Perfomance</label>
+            <label for="performance"><input type="checkbox" id="performance" name="features" value="performance"> Performance</label>
             <label for="design"><input type="checkbox" id="design" name="features" value="design"> Design</label>
         </fieldset>
         <fieldset>
             <legend>Written Review (Optional)</legend>
-            <label for="rewview">Your review</label>
+            <label for="review">Your review</label>
             <textarea id="review" name="review" rows="5"></textarea>
         </fieldset>
         <fieldset>
             <legend>Your Name (Optional)</legend>
             <label for="fullname">Name </label>
-            <input type="text" name="fullname" autocomplete="name">
+            <input type="text" id="fullname" name="fullname" autocomplete="name">
         </fieldset>
             <input type="submit" value="Post Review">
         </form>
